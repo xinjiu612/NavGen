@@ -5,22 +5,31 @@ A workflow in `.github/workflows/deploy.yml` does it for you on every push.
 
 ## Setup
 
-Nothing, normally. The workflow runs `configure-pages` with `enablement: true`,
-so the first run switches Pages on by itself and deploys.
+The site lives in the repository **`xinjiu612/NavGen`**, which is what makes the
+URL `https://xinjiu612.github.io/NavGen/` — the path is always the repository
+name. (A repository called `xinjiu612.github.io` would publish at the bare root
+`https://xinjiu612.github.io/` instead; that one is taken by your personal page,
+so this project uses a named repository.)
 
-If the first run still fails at the "configure-pages" step, set it by hand:
+Two things to turn on once, on `xinjiu612/NavGen`:
 
-**Settings → Pages → Build and deployment → Source → `GitHub Actions`**
+1. **Settings → General → Danger Zone → Change visibility → Public.** Pages on a
+   private repository needs a paid plan.
+2. **Settings → Pages → Build and deployment → Source → `GitHub Actions`.**
 
-then re-run the workflow from **Actions → Build and deploy to GitHub Pages →
-Run workflow**. That is the only setting involved — no branch to pick, no folder
-to choose, no token to create. The workflow already holds the permissions it
-needs (`pages: write`, `id-token: write`).
+The workflow also runs `configure-pages` with `enablement: true`, so step 2 may
+happen by itself on the first run.
+
+If the first run fails at the "configure-pages" step, set the source by hand as
+above and re-run from **Actions → Build and deploy to GitHub Pages → Run
+workflow**. No branch to pick, no folder to choose, no token to create — the
+workflow already holds the permissions it needs (`pages: write`,
+`id-token: write`).
 
 Once set, the site is published at:
 
 ```
-https://xinjiu612.github.io/NavGen_web/
+https://xinjiu612.github.io/NavGen/
 ```
 
 The first run takes about a minute. Progress is under the **Actions** tab;
@@ -105,8 +114,8 @@ systemd auto-start.
 ## Verifying a deploy
 
 ```bash
-node tools/shoot.mjs https://xinjiu612.github.io/NavGen_web/ _scratch/prod
-node tools/check_playback.mjs https://xinjiu612.github.io/NavGen_web/
+node tools/shoot.mjs https://xinjiu612.github.io/NavGen/ _scratch/prod
+node tools/check_playback.mjs https://xinjiu612.github.io/NavGen/
 ```
 
 The first captures every section and reports console errors; the second asserts
