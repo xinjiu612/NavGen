@@ -51,6 +51,21 @@ committed instead. `npm run build` then just copies `public/` into `dist/`.
 That means: **if you re-encode media locally, commit `public/media` too**, or the
 deployed site will keep serving the old clips.
 
+## Why the bundle is not content-hashed
+
+GitHub Pages serves `index.html` with `cache-control: max-age=600`, and each
+deployment replaces the previous one — old files are gone. With Vite's default
+content-hashed filenames, anyone holding a cached `index.html` would request a
+bundle that no longer exists and get a **blank page for up to ten minutes after
+every deploy**.
+
+`vite.config.js` therefore pins the output names to `assets/app.js` and
+`assets/index.css`. A stale cache then means "the previous version of the site",
+never a broken one. Do not reintroduce `[hash]` here.
+
+If you ever need to force everyone onto a fresh copy immediately, bump the query
+string on the entry in `index.html` (`./assets/app.js?v=2`).
+
 ## Size
 
 Comfortably inside every GitHub limit — no external video host is needed.
