@@ -30,13 +30,12 @@ function GalleryMedia() {
   const clips = (data?.gallery ?? []).slice(0, 6)
   return (
     <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3">
-      {clips.map((c, i) => (
+      {clips.map((c) => (
         <div key={c.id} className="space-y-1.5">
           <AutoVideo
             src={mediaUrl(c.video)}
             poster={mediaUrl(c.poster)}
             aspect={5 / 3}
-            eager={i < 3}
           />
           <div className="mono truncate text-[0.62rem] text-txt-mute">{c.id}</div>
         </div>

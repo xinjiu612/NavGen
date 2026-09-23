@@ -142,7 +142,9 @@ export function AutoVideo({
       <video
         ref={ref}
         src={armed ? src : undefined}
-        poster={poster}
+        /* The poster is an <img> underneath, so an ungated one downloads for
+           every clip on the page at once — 2.5 MB across the sections. */
+        poster={armed ? poster : undefined}
         muted
         loop
         playsInline

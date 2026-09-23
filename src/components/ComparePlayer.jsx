@@ -69,12 +69,29 @@ export default function ComparePlayer() {
   const task = tasks[Math.min(taskIdx, Math.max(0, tasks.length - 1))]
   const { refs, playing, restart, toggle } = useSyncedPlayback()
 
+  // Six clips at once is ~1.8 MB. Nothing should be fetched until the grid is
+  // actually approaching the viewport, and nothing should keep playing once it
+  // has scrolled away.
+  const gridRef = useRef(null)
+  const [active, setActive] = useState(false)
+
   useEffect(() => {
-    if (!task) return
+    const el = gridRef.current
+    if (!el) return
+    const io = new IntersectionObserver(
+      ([e]) => setActive(e.isIntersecting),
+      { rootMargin: '300px' },
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!task || !active) return
     const id = setTimeout(restart, 60)
     return () => clearTimeout(id)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [task?.id])
+  }, [task?.id, active])
 
   if (!compare || !task) {
     return (
@@ -133,7 +150,7 @@ export default function ComparePlayer() {
       </div>
 
       {/* six tiles ------------------------------------------------------- */}
-      <div className="grid grid-cols-2 gap-3 p-4 sm:p-5 md:grid-cols-3">
+      <div ref={gridRef} className="grid grid-cols-2 gap-3 p-4 sm:p-5 md:grid-cols-3">
         {compare.methods.map((m, i) => {
           const urls = compareUrls(m, task.id)
           return (
@@ -148,12 +165,12 @@ export default function ComparePlayer() {
               <div className="relative bg-ink-900" style={{ aspectRatio: 5 / 3 }}>
                 <video
                   ref={refs(i)}
-                  src={urls.video}
-                  poster={urls.poster}
+                  src={active ? urls.video : undefined}
+                  poster={active ? urls.poster : undefined}
                   muted
                   loop
                   playsInline
-                  preload="auto"
+                  preload="none"
                   className="h-full w-full object-cover"
                   onClick={() => setExpanded({ method: m, task, urls })}
                 />

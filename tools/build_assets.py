@@ -729,7 +729,7 @@ def section_hero(b: Builder, gallery: list[dict], realworld: list[dict]) -> list
     rel = []
     for src, tag in picks:
         dst = OUT / "hero" / f"{tag}.webp"
-        b.add("hero", _hero_frame, src, dst, 560, b.force)
+        b.add("hero", _hero_frame, src, dst, 460, b.force)
         rel.append(f"hero/{tag}.webp")
     return rel
 
@@ -742,7 +742,7 @@ def _hero_frame(src: Path, dst: Path, max_w: int, force: bool) -> int:
     at = max(0.0, info["duration"] * 0.5)
     run(["ffmpeg", "-v", "error", "-y", "-ss", f"{at:.3f}", "-i", str(src),
          "-frames:v", "1", "-vf", f"scale={max_w}:-2:flags=lanczos",
-         "-c:v", "libwebp", "-quality", "80", "-compression_level", "6",
+         "-c:v", "libwebp", "-quality", "68", "-compression_level", "6",
          "-loglevel", "error", str(dst)])
     return dst.stat().st_size
 
