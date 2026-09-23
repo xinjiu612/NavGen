@@ -1,0 +1,20 @@
+# build + tooling output
+node_modules/
+dist/
+.npm-cache/
+_scratch/
+__pycache__/
+tools/__pycache__/
+
+# serve.sh runtime state
+.serve.pid
+.serve.log
+
+# Raw capture material for tools/build_assets.py. It is ~1.6 GB and lives
+# outside this repository, so the pipeline cannot be re-run from a clone.
+# The transcoded result it produced is committed under public/ instead — see
+# DEPLOY.md.
+html/
+realworld_benchmark_v5/
+icra_2027 (1)/
+step_6000/

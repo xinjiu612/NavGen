@@ -1,0 +1,17 @@
+[Unit]
+Description=Paper site v2 — Visual Generative Models as a Scalable Data Engine
+Documentation=file:///home/hxj/Paper/work/icra_2027/website/v2/README.md
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/hxj/Paper/work/icra_2027/website/v2
+# Absolute paths on purpose: fnm's per-shell node is not available to systemd.
+ExecStart=/home/hxj/.local/share/fnm/node-versions/v22.22.0/installation/bin/node \
+          /home/hxj/Paper/work/icra_2027/website/v2/node_modules/vite/bin/vite.js \
+          preview --host 0.0.0.0 --port 5299 --strictPort
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,24 @@
+{
+  "name": "navgen-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Project website for NavGen: Visual Generative Models as a Scalable Data Engine for Embodied 3D Navigation",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "assets": "python3 tools/build_assets.py"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "puppeteer-core": "^25.11.0",
+    "tailwindcss": "^4.1.0",
+    "vite": "^7.0.0"
+  }
+}

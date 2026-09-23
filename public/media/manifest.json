@@ -1,0 +1,1085 @@
+{
+ "title": "Visual Generative Models as a Scalable Data Engine for Embodied 3D Navigation",
+ "hero": [
+  "hero/vln_100162.webp",
+  "hero/vln_111724.webp",
+  "hero/vln_118288.webp",
+  "hero/vln_161597.webp",
+  "hero/vln_167624.webp",
+  "hero/vln_173390.webp",
+  "hero/vln_183231.webp",
+  "hero/vln_192030.webp",
+  "hero/vln_210264.webp",
+  "hero/vln_225762.webp",
+  "hero/vln_238744.webp",
+  "hero/vln_262035.webp",
+  "hero/vln_271085.webp",
+  "hero/vln_284894.webp",
+  "hero/vln_307112.webp",
+  "hero/vln_349969.webp",
+  "hero/rw_move_outdoors.webp",
+  "hero/rw_down_parking_lot.webp",
+  "hero/rw_black_box.webp",
+  "hero/rw_under_parking_lot_2.webp",
+  "hero/rw_orbit_mountain.webp",
+  "hero/rw_down_ground.webp",
+  "hero/rw_black_car.webp",
+  "hero/rw_fire_hydrant.webp"
+ ],
+ "figures": {
+  "teaser": "figures/teaser.webp",
+  "wordcloud": "figures/wordcloud.webp"
+ },
+ "paper": "paper.pdf",
+ "gallery": [
+  {
+   "id": "vln_100162",
+   "label": "Red post box",
+   "scene": "outdoor",
+   "video": "gallery/vln_100162.mp4",
+   "poster": "gallery/vln_100162.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_106200",
+   "label": "Grey building",
+   "scene": "outdoor",
+   "video": "gallery/vln_106200.mp4",
+   "poster": "gallery/vln_106200.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_111724",
+   "label": "Pink hat",
+   "scene": "indoor",
+   "video": "gallery/vln_111724.mp4",
+   "poster": "gallery/vln_111724.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_118105",
+   "label": "Beige apartment building",
+   "scene": "outdoor",
+   "video": "gallery/vln_118105.mp4",
+   "poster": "gallery/vln_118105.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_118288",
+   "label": "Swimming pool",
+   "scene": "outdoor",
+   "video": "gallery/vln_118288.mp4",
+   "poster": "gallery/vln_118288.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_129367",
+   "label": "Brick building",
+   "scene": "outdoor",
+   "video": "gallery/vln_129367.mp4",
+   "poster": "gallery/vln_129367.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_161597",
+   "label": "Blue house",
+   "scene": "outdoor",
+   "video": "gallery/vln_161597.mp4",
+   "poster": "gallery/vln_161597.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_162148",
+   "label": "Staircase",
+   "scene": "indoor",
+   "video": "gallery/vln_162148.mp4",
+   "poster": "gallery/vln_162148.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_167624",
+   "label": "3D-printed models",
+   "scene": "indoor",
+   "video": "gallery/vln_167624.mp4",
+   "poster": "gallery/vln_167624.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_168580",
+   "label": "Bird",
+   "scene": "outdoor",
+   "video": "gallery/vln_168580.mp4",
+   "poster": "gallery/vln_168580.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_173390",
+   "label": "White truck",
+   "scene": "outdoor",
+   "video": "gallery/vln_173390.mp4",
+   "poster": "gallery/vln_173390.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_174164",
+   "label": "Apartment complex",
+   "scene": "outdoor",
+   "video": "gallery/vln_174164.mp4",
+   "poster": "gallery/vln_174164.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_183231",
+   "label": "Spiral staircase",
+   "scene": "indoor",
+   "video": "gallery/vln_183231.mp4",
+   "poster": "gallery/vln_183231.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_189159",
+   "label": "Model ship",
+   "scene": "indoor",
+   "video": "gallery/vln_189159.mp4",
+   "poster": "gallery/vln_189159.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_192030",
+   "label": "Rooftop pool",
+   "scene": "outdoor",
+   "video": "gallery/vln_192030.mp4",
+   "poster": "gallery/vln_192030.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_198761",
+   "label": "White apartment building",
+   "scene": "outdoor",
+   "video": "gallery/vln_198761.mp4",
+   "poster": "gallery/vln_198761.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_210264",
+   "label": "White building",
+   "scene": "outdoor",
+   "video": "gallery/vln_210264.mp4",
+   "poster": "gallery/vln_210264.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_220817",
+   "label": "Stadium",
+   "scene": "outdoor",
+   "video": "gallery/vln_220817.mp4",
+   "poster": "gallery/vln_220817.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_225762",
+   "label": "Shoebox",
+   "scene": "indoor",
+   "video": "gallery/vln_225762.mp4",
+   "poster": "gallery/vln_225762.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_229621",
+   "label": "Flower",
+   "scene": "indoor",
+   "video": "gallery/vln_229621.mp4",
+   "poster": "gallery/vln_229621.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_238744",
+   "label": "Goldfish model",
+   "scene": "indoor",
+   "video": "gallery/vln_238744.mp4",
+   "poster": "gallery/vln_238744.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_240640",
+   "label": "Green bowl",
+   "scene": "outdoor",
+   "video": "gallery/vln_240640.mp4",
+   "poster": "gallery/vln_240640.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_262035",
+   "label": "Purple truck",
+   "scene": "indoor",
+   "video": "gallery/vln_262035.mp4",
+   "poster": "gallery/vln_262035.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_263611",
+   "label": "Model plane",
+   "scene": "outdoor",
+   "video": "gallery/vln_263611.mp4",
+   "poster": "gallery/vln_263611.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_271085",
+   "label": "Wooden box",
+   "scene": "indoor",
+   "video": "gallery/vln_271085.mp4",
+   "poster": "gallery/vln_271085.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_276000",
+   "label": "Yellow taxi",
+   "scene": "outdoor",
+   "video": "gallery/vln_276000.mp4",
+   "poster": "gallery/vln_276000.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_284894",
+   "label": "Christmas tree",
+   "scene": "indoor",
+   "video": "gallery/vln_284894.mp4",
+   "poster": "gallery/vln_284894.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_306348",
+   "label": "Windmill",
+   "scene": "outdoor",
+   "video": "gallery/vln_306348.mp4",
+   "poster": "gallery/vln_306348.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_307112",
+   "label": "White apartment towers",
+   "scene": "outdoor",
+   "video": "gallery/vln_307112.mp4",
+   "poster": "gallery/vln_307112.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_313588",
+   "label": "Brick apartment building",
+   "scene": "outdoor",
+   "video": "gallery/vln_313588.mp4",
+   "poster": "gallery/vln_313588.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_349969",
+   "label": "White house",
+   "scene": "outdoor",
+   "video": "gallery/vln_349969.mp4",
+   "poster": "gallery/vln_349969.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_350191",
+   "label": "Playground",
+   "scene": "outdoor",
+   "video": "gallery/vln_350191.mp4",
+   "poster": "gallery/vln_350191.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_357054",
+   "label": "Blue kiosk",
+   "scene": "outdoor",
+   "video": "gallery/vln_357054.mp4",
+   "poster": "gallery/vln_357054.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_391700",
+   "label": "Roast chicken",
+   "scene": "indoor",
+   "video": "gallery/vln_391700.mp4",
+   "poster": "gallery/vln_391700.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_47650",
+   "label": "Grey apartment tower",
+   "scene": "outdoor",
+   "video": "gallery/vln_47650.mp4",
+   "poster": "gallery/vln_47650.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_60483",
+   "label": "Modern building",
+   "scene": "outdoor",
+   "video": "gallery/vln_60483.mp4",
+   "poster": "gallery/vln_60483.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_64694",
+   "label": "Stone ruins",
+   "scene": "outdoor",
+   "video": "gallery/vln_64694.mp4",
+   "poster": "gallery/vln_64694.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_71334",
+   "label": "Rooftop pool",
+   "scene": "outdoor",
+   "video": "gallery/vln_71334.mp4",
+   "poster": "gallery/vln_71334.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_73430",
+   "label": "Red car",
+   "scene": "outdoor",
+   "video": "gallery/vln_73430.mp4",
+   "poster": "gallery/vln_73430.webp",
+   "source": "Wan2.2 14B T2V"
+  },
+  {
+   "id": "vln_89738",
+   "label": "Green bird figurine",
+   "scene": "indoor",
+   "video": "gallery/vln_89738.mp4",
+   "poster": "gallery/vln_89738.webp",
+   "source": "Wan2.2 14B T2V"
+  }
+ ],
+ "realworld": [
+  {
+   "id": "move_outdoors",
+   "label": "Move to the outdoors",
+   "scene": "indoor",
+   "video": "realworld/move_outdoors.mp4",
+   "poster": "realworld/move_outdoors.webp",
+   "duration": 41.83,
+   "frames": 1003,
+   "aspect": 1.6667
+  },
+  {
+   "id": "down_parking_lot",
+   "label": "Fly down to the underground parking lot",
+   "scene": "outdoor",
+   "video": "realworld/down_parking_lot.mp4",
+   "poster": "realworld/down_parking_lot.webp",
+   "duration": 29.32,
+   "frames": 703,
+   "aspect": 1.6667
+  },
+  {
+   "id": "black_box",
+   "label": "Orbit around the black box",
+   "scene": "indoor",
+   "video": "realworld/black_box.mp4",
+   "poster": "realworld/black_box.webp",
+   "duration": 14.56,
+   "frames": 349,
+   "aspect": 1.6667
+  },
+  {
+   "id": "under_parking_lot_2",
+   "label": "Move to the underground parking lot",
+   "scene": "outdoor",
+   "video": "realworld/under_parking_lot_2.mp4",
+   "poster": "realworld/under_parking_lot_2.webp",
+   "duration": 14.1,
+   "frames": 338,
+   "aspect": 1.6667
+  },
+  {
+   "id": "orbit_mountain",
+   "label": "Orbit around the grey mountain",
+   "scene": "indoor",
+   "video": "realworld/orbit_mountain.mp4",
+   "poster": "realworld/orbit_mountain.webp",
+   "duration": 12.76,
+   "frames": 306,
+   "aspect": 1.6667
+  },
+  {
+   "id": "down_ground",
+   "label": "Fly down to the ground",
+   "scene": "outdoor",
+   "video": "realworld/down_ground.mp4",
+   "poster": "realworld/down_ground.webp",
+   "duration": 8.22,
+   "frames": 197,
+   "aspect": 1.6667
+  },
+  {
+   "id": "black_car",
+   "label": "Fly to the black car",
+   "scene": "outdoor",
+   "video": "realworld/black_car.mp4",
+   "poster": "realworld/black_car.webp",
+   "duration": 7.17,
+   "frames": 172,
+   "aspect": 1.6667
+  },
+  {
+   "id": "fire_hydrant",
+   "label": "Move to the red fire hydrant",
+   "scene": "outdoor",
+   "video": "realworld/fire_hydrant.mp4",
+   "poster": "realworld/fire_hydrant.webp",
+   "duration": 6.3,
+   "frames": 151,
+   "aspect": 1.6667
+  },
+  {
+   "id": "yellow_doll",
+   "label": "Fly to the yellow doll",
+   "scene": "outdoor",
+   "video": "realworld/yellow_doll.mp4",
+   "poster": "realworld/yellow_doll.webp",
+   "duration": 5.67,
+   "frames": 136,
+   "aspect": 1.6667
+  },
+  {
+   "id": "yellow_traffic",
+   "label": "Fly to the yellow traffic cone",
+   "scene": "outdoor",
+   "video": "realworld/yellow_traffic.mp4",
+   "poster": "realworld/yellow_traffic.webp",
+   "duration": 5.0,
+   "frames": 120,
+   "aspect": 1.6667
+  },
+  {
+   "id": "tree",
+   "label": "Move to the tree",
+   "scene": "indoor",
+   "video": "realworld/tree.mp4",
+   "poster": "realworld/tree.webp",
+   "duration": 4.63,
+   "frames": 111,
+   "aspect": 1.6667
+  },
+  {
+   "id": "pass_gate",
+   "label": "Pass through the circular frame",
+   "scene": "outdoor",
+   "video": "realworld/pass_gate.mp4",
+   "poster": "realworld/pass_gate.webp",
+   "duration": 4.21,
+   "frames": 101,
+   "aspect": 1.6667
+  },
+  {
+   "id": "mountain",
+   "label": "Move to the grey mountain",
+   "scene": "indoor",
+   "video": "realworld/mountain.mp4",
+   "poster": "realworld/mountain.webp",
+   "duration": 3.96,
+   "frames": 95,
+   "aspect": 1.6667
+  },
+  {
+   "id": "qr_code",
+   "label": "Fly to the QR code",
+   "scene": "indoor",
+   "video": "realworld/qr_code.mp4",
+   "poster": "realworld/qr_code.webp",
+   "duration": 3.67,
+   "frames": 88,
+   "aspect": 1.6667
+  },
+  {
+   "id": "mirror",
+   "label": "Move to the mirror",
+   "scene": "indoor",
+   "video": "realworld/mirror.mp4",
+   "poster": "realworld/mirror.webp",
+   "duration": 2.92,
+   "frames": 70,
+   "aspect": 1.6667
+  },
+  {
+   "id": "green_fan",
+   "label": "Move to the green fan",
+   "scene": "outdoor",
+   "video": "realworld/green_fan.mp4",
+   "poster": "realworld/green_fan.webp",
+   "duration": 2.84,
+   "frames": 68,
+   "aspect": 1.6667
+  }
+ ],
+ "diversify": [
+  {
+   "id": "vln_0001",
+   "label": "Long-tail clip A",
+   "reference": {
+    "video": "diversify/vln_0001/reference.mp4",
+    "poster": "diversify/vln_0001/reference.webp"
+   },
+   "styles": [
+    {
+     "id": "01",
+     "video": "diversify/vln_0001/style_01.mp4",
+     "poster": "diversify/vln_0001/style_01.webp",
+     "edit": "diversify/vln_0001/style_01_edit.webp"
+    },
+    {
+     "id": "02",
+     "video": "diversify/vln_0001/style_02.mp4",
+     "poster": "diversify/vln_0001/style_02.webp",
+     "edit": "diversify/vln_0001/style_02_edit.webp"
+    },
+    {
+     "id": "03",
+     "video": "diversify/vln_0001/style_03.mp4",
+     "poster": "diversify/vln_0001/style_03.webp",
+     "edit": "diversify/vln_0001/style_03_edit.webp"
+    },
+    {
+     "id": "04",
+     "video": "diversify/vln_0001/style_04.mp4",
+     "poster": "diversify/vln_0001/style_04.webp",
+     "edit": "diversify/vln_0001/style_04_edit.webp"
+    },
+    {
+     "id": "05",
+     "video": "diversify/vln_0001/style_05.mp4",
+     "poster": "diversify/vln_0001/style_05.webp",
+     "edit": "diversify/vln_0001/style_05_edit.webp"
+    },
+    {
+     "id": "06",
+     "video": "diversify/vln_0001/style_06.mp4",
+     "poster": "diversify/vln_0001/style_06.webp",
+     "edit": "diversify/vln_0001/style_06_edit.webp"
+    },
+    {
+     "id": "07",
+     "video": "diversify/vln_0001/style_07.mp4",
+     "poster": "diversify/vln_0001/style_07.webp",
+     "edit": "diversify/vln_0001/style_07_edit.webp"
+    },
+    {
+     "id": "08",
+     "video": "diversify/vln_0001/style_08.mp4",
+     "poster": "diversify/vln_0001/style_08.webp",
+     "edit": "diversify/vln_0001/style_08_edit.webp"
+    }
+   ]
+  },
+  {
+   "id": "vln_0012",
+   "label": "Long-tail clip B",
+   "reference": {
+    "video": "diversify/vln_0012/reference.mp4",
+    "poster": "diversify/vln_0012/reference.webp"
+   },
+   "styles": [
+    {
+     "id": "01",
+     "video": "diversify/vln_0012/style_01.mp4",
+     "poster": "diversify/vln_0012/style_01.webp",
+     "edit": null
+    },
+    {
+     "id": "02",
+     "video": "diversify/vln_0012/style_02.mp4",
+     "poster": "diversify/vln_0012/style_02.webp",
+     "edit": null
+    },
+    {
+     "id": "03",
+     "video": "diversify/vln_0012/style_03.mp4",
+     "poster": "diversify/vln_0012/style_03.webp",
+     "edit": null
+    },
+    {
+     "id": "04",
+     "video": "diversify/vln_0012/style_04.mp4",
+     "poster": "diversify/vln_0012/style_04.webp",
+     "edit": null
+    },
+    {
+     "id": "05",
+     "video": "diversify/vln_0012/style_05.mp4",
+     "poster": "diversify/vln_0012/style_05.webp",
+     "edit": null
+    },
+    {
+     "id": "06",
+     "video": "diversify/vln_0012/style_06.mp4",
+     "poster": "diversify/vln_0012/style_06.webp",
+     "edit": null
+    },
+    {
+     "id": "07",
+     "video": "diversify/vln_0012/style_07.mp4",
+     "poster": "diversify/vln_0012/style_07.webp",
+     "edit": null
+    },
+    {
+     "id": "08",
+     "video": "diversify/vln_0012/style_08.mp4",
+     "poster": "diversify/vln_0012/style_08.webp",
+     "edit": null
+    }
+   ]
+  },
+  {
+   "id": "vln_0019_v2",
+   "label": "Long-tail clip C",
+   "reference": {
+    "video": "diversify/vln_0019_v2/reference.mp4",
+    "poster": "diversify/vln_0019_v2/reference.webp"
+   },
+   "styles": [
+    {
+     "id": "01",
+     "video": "diversify/vln_0019_v2/style_01.mp4",
+     "poster": "diversify/vln_0019_v2/style_01.webp",
+     "edit": null
+    },
+    {
+     "id": "02",
+     "video": "diversify/vln_0019_v2/style_02.mp4",
+     "poster": "diversify/vln_0019_v2/style_02.webp",
+     "edit": null
+    },
+    {
+     "id": "03",
+     "video": "diversify/vln_0019_v2/style_03.mp4",
+     "poster": "diversify/vln_0019_v2/style_03.webp",
+     "edit": null
+    },
+    {
+     "id": "04",
+     "video": "diversify/vln_0019_v2/style_04.mp4",
+     "poster": "diversify/vln_0019_v2/style_04.webp",
+     "edit": null
+    },
+    {
+     "id": "05",
+     "video": "diversify/vln_0019_v2/style_05.mp4",
+     "poster": "diversify/vln_0019_v2/style_05.webp",
+     "edit": null
+    },
+    {
+     "id": "06",
+     "video": "diversify/vln_0019_v2/style_06.mp4",
+     "poster": "diversify/vln_0019_v2/style_06.webp",
+     "edit": null
+    },
+    {
+     "id": "07",
+     "video": "diversify/vln_0019_v2/style_07.mp4",
+     "poster": "diversify/vln_0019_v2/style_07.webp",
+     "edit": null
+    },
+    {
+     "id": "08",
+     "video": "diversify/vln_0019_v2/style_08.mp4",
+     "poster": "diversify/vln_0019_v2/style_08.webp",
+     "edit": null
+    }
+   ]
+  }
+ ],
+ "compare": {
+  "methods": [
+   {
+    "key": "ours_bi",
+    "label": "Ours (BI)",
+    "highlight": true,
+    "video": "compare/ours_bi/{task}.mp4",
+    "poster": "compare/ours_bi/{task}.webp"
+   },
+   {
+    "key": "ours_ar",
+    "label": "Ours (AR)",
+    "highlight": true,
+    "video": "compare/ours_ar/{task}.mp4",
+    "poster": "compare/ours_ar/{task}.webp"
+   },
+   {
+    "key": "uavflow",
+    "label": "UAV-Flow",
+    "highlight": false,
+    "video": "compare/uavflow/{task}.mp4",
+    "poster": "compare/uavflow/{task}.webp"
+   },
+   {
+    "key": "indooruav",
+    "label": "IndoorUAV",
+    "highlight": false,
+    "video": "compare/indooruav/{task}.mp4",
+    "poster": "compare/indooruav/{task}.webp"
+   },
+   {
+    "key": "openfly",
+    "label": "OpenFly",
+    "highlight": false,
+    "video": "compare/openfly/{task}.mp4",
+    "poster": "compare/openfly/{task}.webp"
+   },
+   {
+    "key": "traveluav",
+    "label": "TravelUAV",
+    "highlight": false,
+    "video": "compare/traveluav/{task}.mp4",
+    "poster": "compare/traveluav/{task}.webp"
+   }
+  ],
+  "tasks": [
+   {
+    "id": "0000",
+    "scene": "indoor",
+    "label": "Fly to the grey refrigerator",
+    "prompt": "The view starts in a narrow office lounge corridor with glass partitions, looking toward a grey refrigerator at the far end. Large blue water jugs sit on the floor to the left, while a long grey sofa with orange cushions lines the right wall. The camera pushes steadily forward down the center of the aisle. As the viewpoint advances, the water jugs and sofa expand outward toward the frame edges, and the refrigerator grows significantly larger in the center. The sequence ends with a close-up view where the refrigerator dominates the central third of the frame."
+   },
+   {
+    "id": "0003",
+    "scene": "indoor",
+    "label": "Fly to the standing fan",
+    "prompt": "The scene opens in a spacious industrial room with gray flooring, heavy curtains, and a standing fan on the left. The camera pushes forward and drifts slightly to the left, targeting the fan. As the viewpoint advances, the fan grows significantly larger and shifts from the left third toward the center, while the person at the desk in the background slides toward the right side of the frame. The sequence concludes with the fan framed centrally as the main subject, appearing much closer than in the initial view."
+   },
+   {
+    "id": "0006",
+    "scene": "indoor",
+    "label": "Fly to the white column",
+    "prompt": "The scene opens in a spacious robotics testing facility featuring a large white safety net enclosure and a person standing behind a white cylindrical column in the center-right region. A small black robot with green lights sits on the floor in the right third. The camera pushes forward and drifts slightly to the right, approaching the white column. As the viewpoint advances, the column shifts from the center-right region toward the central third of the frame and grows larger, while the robot slides toward the left edge. The sequence settles into a closer view with the white column clearly framed as the main target in the central third."
+   },
+   {
+    "id": "0016",
+    "scene": "indoor",
+    "label": "Fly to the window",
+    "prompt": "A stairwell interior features a dark grey staircase ascending on the left, a polished metal railing running through the center, and a window visible in the background. The camera pushes forward and drifts slightly to the left while tracking the window to keep it centered. As the viewpoint advances, the foreground railing shifts toward the right side of the frame due to parallax, and the window expands in size. The sequence ends with a closer view where the window is clearly framed in the center and the railing is positioned in the right third."
+   },
+   {
+    "id": "0018",
+    "scene": "indoor",
+    "label": "Fly to the glass door",
+    "prompt": "The scene opens in a modern lobby with a large, curved grey sculpture dominating the left foreground and an open glass doorway visible in the right background. The camera pushes forward while drifting slightly to the right, causing the grey sculpture to slide toward the left edge of the frame. As the viewpoint advances, the open glass doors in the background expand significantly in size, and the person in the white shirt standing near the threshold becomes larger and more distinct. The sequence concludes with a closer view where the open glass door is the central focus."
+   },
+   {
+    "id": "0020",
+    "scene": "outdoor",
+    "label": "Fly to the recycling bins",
+    "prompt": "The scene opens on a paved walkway beneath a covered structure, with a pair of brown recycling bins positioned in the left-center foreground next to a patch of green landscaping. To the right, a woman in a white shirt stands near a large grey pillar holding cleaning tools, while storefronts with orange accents line the background. The camera pushes forward and drifts slightly to the left, causing the foreground pavement to slide toward the right side of the frame. As the viewpoint advances, the recycling bins shift from the left-center region toward the center and grow noticeably larger, while the woman near the pillar moves toward the right edge. The sequence settles into a closer view where the recycling bins are clearly framed as the main target in the central third."
+   },
+   {
+    "id": "0024",
+    "scene": "outdoor",
+    "label": "Fly to the grey electric car",
+    "prompt": "A grey electric sedan with a green license plate is parked on an asphalt street in front of a modern storefront featuring large glass windows and red pillars. The camera pushes forward and drifts slightly to the left, moving closer to the vehicle while maintaining its viewing direction toward the car. As the viewpoint advances, the sedan and the storefront details behind it appear larger and clearer, while the white directional arrow on the pavement shifts perspective. The sequence settles into a closer left-offset view with the black car clearly framed as the main target."
+   },
+   {
+    "id": "0027",
+    "scene": "outdoor",
+    "label": "Fly to the white SUV",
+    "prompt": "The scene opens on a city street with a silver sedan parked alongside a white SUV under the shade of trees. The camera moves forward and drifts slightly to the right, closing the distance to the white SUV. As the viewpoint advances, the silver sedan on the left slides out of the frame, and the white SUV grows significantly larger in the view. The sequence concludes with a closer perspective where the white SUV dominates the right side of the frame."
+   },
+   {
+    "id": "0030",
+    "scene": "outdoor",
+    "label": "Fly to the traffic cones",
+    "prompt": "A street-level view captures three yellow and black traffic cones on a paved median, with a black pickup truck and a silver sedan parked to the right. The camera pushes forward and drifts slightly left, causing the cones to enlarge significantly while the parked vehicles shift toward the right edge of the frame due to parallax. The sequence ends with a close-up composition where the traffic cones dominate the center-left region."
+   },
+   {
+    "id": "0036",
+    "scene": "outdoor",
+    "label": "Fly to the black SUV",
+    "prompt": "The scene opens on a wooden deck area with a large grey structural column in the foreground and a glass storefront displaying a food advertisement to the right. A black SUV is parked on the paved driveway to the left. The camera moves forward and drifts slightly to the left, navigating toward the vehicle. As the viewpoint advances, the grey column and the advertisement poster shift toward the right edge of the frame, while the black car grows significantly larger and more detailed. The sequence concludes with a closer perspective where the black SUV dominates the left side of the view."
+   },
+   {
+    "id": "0049",
+    "scene": "outdoor",
+    "label": "Fly to the underground garage entrance",
+    "prompt": "A paved plaza stretches toward a modern building featuring a glass facade and a prominent red overhang. To the right, a large open entrance reveals a teal-painted wall inside an underground garage. The camera moves forward and drifts slightly to the right, approaching the garage entrance. As the viewpoint advances, the patterned paving stones in the foreground recede and slide toward the left side of the frame. The garage entrance and the red overhang above it grow significantly larger, while the teal wall becomes more distinct and detailed. The sequence ends with a closer, right-offset view where the underground garage entrance dominates the right third of the frame."
+   },
+   {
+    "id": "0050",
+    "scene": "outdoor",
+    "label": "Fly to the red truck",
+    "prompt": "A street-level view captures a blue jacket draped over a foreground object and a utility box with exposed yellow wiring, while a red truck waits in the distance. The camera pushes forward and drifts slightly to the right, causing the foreground jacket to slide toward the left edge of the frame. As the viewpoint advances, the red truck grows significantly larger and shifts into the central third of the view, becoming the dominant subject against the backdrop of city buildings and trees."
+   },
+   {
+    "id": "0056",
+    "scene": "outdoor",
+    "label": "Fly to the white bus",
+    "prompt": "A white bus with green graphics sits in the left lane of a city intersection, flanked by a modern glass building on the left and a crosswalk in the foreground. The camera pushes forward while drifting slightly to the left, moving closer to the bus. As the viewpoint advances, the bus appears significantly larger and shifts from the far left edge toward the center-left of the frame, while the foreground crosswalk markings recede and disappear from the bottom of the view. The sequence ends with a closer view where the bus dominates the center-left region."
+   },
+   {
+    "id": "0058",
+    "scene": "outdoor",
+    "label": "Fly to the green bus",
+    "prompt": "The scene opens on a paved city sidewalk corner, looking across a wide intersection toward a large, modern glass building with dark vertical lines. A bright green bus is visible on the road to the left, positioned near the building's facade. The camera pushes forward and drifts slightly to the left, maintaining its viewing direction toward the green bus. As the viewpoint advances, the foreground pavement and curb slide subtly toward the right side of the frame, while the green bus remains the central focus and becomes larger and clearer as the camera approaches. The sequence settles into a closer left-offset view with the green bus clearly framed as the main target."
+   },
+   {
+    "id": "0060",
+    "scene": "outdoor",
+    "label": "Fly to the reflecting pool",
+    "prompt": "A wide paved plaza stretches toward a modern office building, with a long rectangular reflecting pool featuring active fountains running along the left side and several parked cars stationed on the right. The camera pushes forward across the stone tiles while drifting slightly to the left, causing the foreground pavement to slide toward the right edge of the frame. As the viewpoint advances, the water feature grows larger and shifts from the left side toward the middle of the view, while the parked vehicles on the right recede toward the frame's edge. The sequence settles into a closer perspective where the reflecting pool dominates the central third of the composition."
+   }
+  ],
+  "clipCount": 90,
+  "note": "long-horizon rollouts, all retimed to the same duration"
+ },
+ "scaling": {
+  "series": [
+   {
+    "color": "#4f8ff7",
+    "marker": "circle",
+    "label": "IndoorUAV",
+    "key": "IndoorUAV",
+    "samples": [
+     1000,
+     3200,
+     9600,
+     16000,
+     22400,
+     32000,
+     48000,
+     400000
+    ],
+    "progress": [
+     0.375,
+     0.375,
+     0.5676666666666667,
+     0.5363333333333333,
+     0.48433333333333334,
+     0.5519999999999999,
+     0.4686666666666666,
+     0.5053333333333333
+    ],
+    "epochs": [
+     0.093,
+     0.093,
+     0.279,
+     0.464,
+     0.65,
+     0.929,
+     1.393,
+     1.858
+    ],
+    "oneEpochIndex": 5,
+    "highlight": false
+   },
+   {
+    "color": "#3fbf6f",
+    "marker": "square",
+    "label": "OpenFly",
+    "key": "OpenFly",
+    "samples": [
+     1000,
+     3200,
+     9600,
+     16000,
+     22400,
+     32000,
+     64000,
+     96000,
+     400000
+    ],
+    "progress": [
+     0.349,
+     0.349,
+     0.4583333333333333,
+     0.38033333333333336,
+     0.46366666666666667,
+     0.453,
+     0.4323333333333333,
+     0.39066666666666666,
+     0.46366666666666667
+    ],
+    "epochs": [
+     0.032,
+     0.032,
+     0.096,
+     0.16,
+     0.224,
+     0.319,
+     0.639,
+     0.958,
+     1.277
+    ],
+    "oneEpochIndex": 7,
+    "highlight": false
+   },
+   {
+    "color": "#e0559f",
+    "marker": "diamond",
+    "label": "Ours (AR)",
+    "key": "Ours(ar)",
+    "samples": [
+     1000,
+     3200,
+     9600,
+     16000,
+     22400,
+     32000,
+     160000,
+     320000,
+     400000
+    ],
+    "progress": [
+     0.5416666666666666,
+     0.5416666666666666,
+     0.547,
+     0.5833333333333334,
+     0.6146666666666667,
+     0.6093333333333334,
+     0.677,
+     0.703,
+     0.6563333333333333
+    ],
+    "epochs": [
+     0.006,
+     0.006,
+     0.017,
+     0.029,
+     0.04,
+     0.057,
+     0.286,
+     0.573,
+     0.802
+    ],
+    "oneEpochIndex": 8,
+    "highlight": true
+   },
+   {
+    "color": "#f0453f",
+    "marker": "triangle",
+    "label": "Ours (BI)",
+    "key": "Ours(bi)",
+    "samples": [
+     1000,
+     3200,
+     7692,
+     130769,
+     269230,
+     400000
+    ],
+    "progress": [
+     0.61,
+     0.61,
+     0.703,
+     0.812,
+     0.8,
+     0.804
+    ],
+    "epochs": [
+     0.006,
+     0.006,
+     0.014,
+     0.243,
+     0.501,
+     0.744
+    ],
+    "oneEpochIndex": 5,
+    "highlight": true
+   },
+   {
+    "color": "#f0a878",
+    "marker": "triangleUp",
+    "label": "TravelUAV",
+    "key": "TravelUAV",
+    "samples": [
+     1000,
+     3200,
+     9600,
+     16000,
+     22400,
+     32000,
+     400000
+    ],
+    "progress": [
+     0.35400000000000004,
+     0.35400000000000004,
+     0.427,
+     0.26566666666666666,
+     0.349,
+     0.104,
+     0.25533333333333336
+    ],
+    "epochs": [
+     0.208,
+     0.208,
+     0.625,
+     1.041,
+     1.458,
+     2.082,
+     4.165
+    ],
+    "oneEpochIndex": 3,
+    "highlight": false
+   },
+   {
+    "color": "#9b8ce0",
+    "marker": "plus",
+    "label": "UAV-Flow",
+    "key": "UAVFlow",
+    "samples": [
+     1000,
+     3200,
+     9600,
+     16000,
+     22400,
+     32000,
+     64000,
+     96000,
+     128000,
+     400000
+    ],
+    "progress": [
+     0.17700000000000002,
+     0.17700000000000002,
+     0.2916666666666667,
+     0.2813333333333333,
+     0.297,
+     0.25533333333333336,
+     0.4686666666666666,
+     0.526,
+     0.43733333333333335,
+     0.48433333333333334
+    ],
+    "epochs": [
+     0.124,
+     0.124,
+     0.373,
+     0.622,
+     0.87,
+     1.243,
+     2.486,
+     3.73,
+     4.973,
+     6.217
+    ],
+    "oneEpochIndex": 4,
+    "highlight": false
+   }
+  ]
+ },
+ "stats": {
+  "episodes": 400000,
+  "commonEpisodes": 300000,
+  "longTailEpisodes": 100000,
+  "longTailSource": 10000,
+  "vendi": 47.6,
+  "vendiBaseline": 16.8,
+  "vendiRatio": 2.8,
+  "fdClip": 0.806,
+  "fdClipReal": 0.691,
+  "successRate": 75,
+  "fps": 47,
+  "speedup": 244.4,
+  "latencyOriginal": 171.568,
+  "latencyFinal": 0.702
+ }
+}
