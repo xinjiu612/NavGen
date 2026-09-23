@@ -33,7 +33,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      # enablement: true lets the first run turn Pages on by itself instead of
+      # failing until someone flips the switch in Settings.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -3,15 +3,19 @@
 The site is a **static build** — GitHub does not run `npm run build` on its own.
 A workflow in `.github/workflows/deploy.yml` does it for you on every push.
 
-## One-time setup (the only thing you must click)
+## Setup
 
-After the first push, open the repository and go to:
+Nothing, normally. The workflow runs `configure-pages` with `enablement: true`,
+so the first run switches Pages on by itself and deploys.
+
+If the first run still fails at the "configure-pages" step, set it by hand:
 
 **Settings → Pages → Build and deployment → Source → `GitHub Actions`**
 
-That is the only setting. Nothing else needs configuring — no branch to pick, no
-folder to choose, no token to create. The workflow already has the permissions
-it needs (`pages: write`, `id-token: write`).
+then re-run the workflow from **Actions → Build and deploy to GitHub Pages →
+Run workflow**. That is the only setting involved — no branch to pick, no folder
+to choose, no token to create. The workflow already holds the permissions it
+needs (`pages: write`, `id-token: write`).
 
 Once set, the site is published at:
 
