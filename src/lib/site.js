@@ -32,12 +32,13 @@ export const AFFILIATIONS = [
 ]
 
 export const LINKS = {
-  // Filled in at release time; the buttons hide themselves when a value is null.
+  // Anything left null renders as a dimmed "soon" chip rather than a dead link.
   paper: 'paper.pdf',
+  modelscope: 'https://www.modelscope.cn/datasets/xinjiu612/NavGen',
+  huggingface: 'https://huggingface.co/datasets/xinjiu/NavGen',
+  arxiv: null, // add the arXiv abs URL here once the paper is posted
   video: null,
   code: null,
-  dataset: null,
-  weights: null,
 }
 
 export const BIBTEX = `@article{huang2027navgen,

@@ -748,13 +748,20 @@ def _hero_frame(src: Path, dst: Path, max_w: int, force: bool) -> int:
 
 
 def section_paper(b: Builder) -> str | None:
-    if not SRC_PAPER.exists():
-        print(f"  !! paper pdf not found: {SRC_PAPER}")
-        return None
+    """The PDF is a committed asset — it gets replaced by hand, not generated.
+
+    A copy is pulled from SRC_PAPER only when the published file is missing, so
+    an ordinary pipeline run can never revert a newer upload. `--force` still
+    refreshes it from the source.
+    """
     dst = SITE / "public" / "paper.pdf"
-    if not fresh(dst, SRC_PAPER, b.force):
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(SRC_PAPER, dst)
+    if dst.exists() and not b.force:
+        return "paper.pdf"
+    if not SRC_PAPER.exists():
+        print(f"  !! no paper.pdf, and no fallback source at {SRC_PAPER}")
+        return None
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(SRC_PAPER, dst)
     return "paper.pdf"
 
 

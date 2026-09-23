@@ -1,6 +1,7 @@
-import { AFFILIATIONS, AUTHORS, HEADLINE_STATS, TITLE } from '../lib/site.js'
+import { AFFILIATIONS, AUTHORS, HEADLINE_STATS, LINKS, TITLE } from '../lib/site.js'
 import { mediaUrl, useMedia } from '../lib/media.jsx'
 import { Stat } from './ui.jsx'
+import { ArXivIcon, BrandLinks, HuggingFaceIcon, ModelScopeIcon } from './brand.jsx'
 
 /* A slowly breathing mosaic of dataset stills, tilted away from the viewer. */
 function DataWall({ frames }) {
@@ -106,6 +107,15 @@ export default function Hero() {
               Browse the data
             </a>
           </div>
+
+          <BrandLinks
+            className="mt-6"
+            links={[
+              { key: 'modelscope', href: LINKS.modelscope, label: 'ModelScope', Icon: ModelScopeIcon },
+              { key: 'huggingface', href: LINKS.huggingface, label: 'Hugging Face', Icon: HuggingFaceIcon },
+              { key: 'arxiv', href: LINKS.arxiv, label: 'arXiv', Icon: ArXivIcon },
+            ]}
+          />
 
           <div className="mt-12">
             <div className="flex flex-wrap items-baseline justify-center gap-x-1.5 gap-y-1 text-[0.92rem] text-txt">

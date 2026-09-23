@@ -1,4 +1,5 @@
 import { BIBTEX, LINKS, TITLE } from '../lib/site.js'
+import { ArXivIcon, BrandLinks, HuggingFaceIcon, ModelScopeIcon } from './brand.jsx'
 import { useCopy } from '../lib/hooks.js'
 import { Section } from './ui.jsx'
 
@@ -9,9 +10,13 @@ export default function Citation() {
     ['Paper', LINKS.paper],
     ['Video', LINKS.video],
     ['Code', LINKS.code],
-    ['Dataset', LINKS.dataset],
-    ['Weights', LINKS.weights],
   ].filter(([, href]) => href)
+
+  const badges = [
+    { key: 'modelscope', href: LINKS.modelscope, label: 'Dataset on ModelScope', Icon: ModelScopeIcon },
+    { key: 'huggingface', href: LINKS.huggingface, label: 'Dataset on Hugging Face', Icon: HuggingFaceIcon },
+    { key: 'arxiv', href: LINKS.arxiv, label: 'arXiv', Icon: ArXivIcon },
+  ]
 
   return (
     <Section
@@ -38,7 +43,11 @@ export default function Citation() {
         </pre>
       </div>
 
-      <div className="reveal mt-8 flex flex-wrap gap-3">
+      <div className="reveal mt-6">
+        <BrandLinks className="!justify-start" links={badges} />
+      </div>
+
+      <div className="reveal mt-6 flex flex-wrap gap-3">
         {links.map(([label, href]) => (
           <a
             key={label}
