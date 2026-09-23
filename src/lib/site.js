@@ -36,9 +36,9 @@ export const LINKS = {
   paper: 'paper.pdf',
   modelscope: 'https://www.modelscope.cn/datasets/xinjiu612/NavGen',
   huggingface: 'https://huggingface.co/datasets/xinjiu/NavGen',
+  code: 'https://github.com/xinjiu612/NavGen-code',
   arxiv: null, // add the arXiv abs URL here once the paper is posted
   video: null,
-  code: null,
 }
 
 export const BIBTEX = `@article{huang2027navgen,

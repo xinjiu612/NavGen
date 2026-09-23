@@ -1,5 +1,5 @@
 import { BIBTEX, LINKS, TITLE } from '../lib/site.js'
-import { ArXivIcon, BrandLinks, HuggingFaceIcon, ModelScopeIcon } from './brand.jsx'
+import { ArXivIcon, BrandLinks, GitHubIcon, HuggingFaceIcon, ModelScopeIcon } from './brand.jsx'
 import { useCopy } from '../lib/hooks.js'
 import { Section } from './ui.jsx'
 
@@ -15,6 +15,7 @@ export default function Citation() {
   const badges = [
     { key: 'modelscope', href: LINKS.modelscope, label: 'Dataset on ModelScope', Icon: ModelScopeIcon },
     { key: 'huggingface', href: LINKS.huggingface, label: 'Dataset on Hugging Face', Icon: HuggingFaceIcon },
+    { key: 'code', href: LINKS.code, label: 'Code on GitHub', Icon: GitHubIcon },
     { key: 'arxiv', href: LINKS.arxiv, label: 'arXiv', Icon: ArXivIcon },
   ]
 

@@ -1,7 +1,7 @@
 import { AFFILIATIONS, AUTHORS, HEADLINE_STATS, LINKS, TITLE } from '../lib/site.js'
 import { mediaUrl, useMedia } from '../lib/media.jsx'
 import { Stat } from './ui.jsx'
-import { ArXivIcon, BrandLinks, HuggingFaceIcon, ModelScopeIcon } from './brand.jsx'
+import { ArXivIcon, BrandLinks, GitHubIcon, HuggingFaceIcon, ModelScopeIcon } from './brand.jsx'
 
 /* A slowly breathing mosaic of dataset stills, tilted away from the viewer. */
 function DataWall({ frames }) {
@@ -85,7 +85,9 @@ export default function Hero() {
             diverse, realistic, and good enough to fly a real UAV zero-shot.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
+          {/* One row of outward-facing resources. Section links live in the
+              nav, so the hero does not repeat them. */}
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-2.5">
             <a href="paper.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M6 2h8l6 6v14H6z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
@@ -93,30 +95,15 @@ export default function Hero() {
               </svg>
               Read the paper
             </a>
-            <a href="#benchmark" className="btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M4 19V9M10 19V4M16 19v-7M22 19H2" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-              </svg>
-              See the benchmark
-            </a>
-            <a href="#data" className="btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="14" rx="2.5" stroke="currentColor" strokeWidth="1.8" />
-                <path d="M10 9.2v5l4.4-2.5z" fill="currentColor" />
-              </svg>
-              Browse the data
-            </a>
+            <BrandLinks
+              links={[
+                { key: 'modelscope', href: LINKS.modelscope, label: 'ModelScope', Icon: ModelScopeIcon },
+                { key: 'huggingface', href: LINKS.huggingface, label: 'Hugging Face', Icon: HuggingFaceIcon },
+                { key: 'code', href: LINKS.code, label: 'GitHub', Icon: GitHubIcon },
+                { key: 'arxiv', href: LINKS.arxiv, label: 'arXiv', Icon: ArXivIcon },
+              ]}
+            />
           </div>
-
-          <BrandLinks
-            className="mt-6"
-            links={[
-              { key: 'modelscope', href: LINKS.modelscope, label: 'ModelScope', Icon: ModelScopeIcon },
-              { key: 'huggingface', href: LINKS.huggingface, label: 'Hugging Face', Icon: HuggingFaceIcon },
-              { key: 'arxiv', href: LINKS.arxiv, label: 'arXiv', Icon: ArXivIcon },
-            ]}
-          />
-
           <div className="mt-12">
             <div className="flex flex-wrap items-baseline justify-center gap-x-1.5 gap-y-1 text-[0.92rem] text-txt">
               {AUTHORS.map((a, i) => (
