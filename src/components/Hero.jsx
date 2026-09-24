@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { AFFILIATIONS, AUTHORS, HEADLINE_STATS, LINKS, TITLE } from '../lib/site.js'
 import { mediaUrl, useMedia } from '../lib/media.jsx'
 import { Stat } from './ui.jsx'
@@ -107,11 +108,18 @@ export default function Hero() {
           <div className="mt-12">
             <div className="flex flex-wrap items-baseline justify-center gap-x-1.5 gap-y-1 text-[0.92rem] text-txt">
               {AUTHORS.map((a, i) => (
-                <span key={a.name} className="whitespace-nowrap">
-                  <span className={a.corresponding ? 'font-medium' : ''}>{a.name}</span>
-                  <AffMark ids={a.aff} corresponding={a.corresponding} />
-                  {i < AUTHORS.length - 1 && <span className="text-txt-mute">,</span>}
-                </span>
+                <Fragment key={a.name}>
+                  <span className="whitespace-nowrap">
+                    <span className={a.corresponding ? 'font-medium' : ''}>{a.name}</span>
+                    <AffMark ids={a.aff} corresponding={a.corresponding} />
+                    {i < AUTHORS.length - 1 && <span className="text-txt-mute">,</span>}
+                  </span>
+                  {/* The paper breaks the list here, leaving the last three on
+                      their own line. */}
+                  {a.name === 'Zhiyang Liu' && (
+                    <span aria-hidden="true" className="basis-full" />
+                  )}
+                </Fragment>
               ))}
             </div>
             <div className="mx-auto mt-4 max-w-3xl space-y-1 text-[0.76rem] leading-relaxed text-txt-mute">
@@ -121,10 +129,13 @@ export default function Hero() {
                 </div>
               ))}
               <div className="pt-1">
-                <span className="text-cyan">†</span> Corresponding authors:{' '}
-                {AUTHORS.filter((a) => a.corresponding)
-                  .map((a) => a.name)
-                  .join(', ')}
+                <span className="text-cyan">†</span>{' '}
+                {(() => {
+                  const who = AUTHORS.filter((a) => a.corresponding)
+                  return `Corresponding author${who.length > 1 ? 's' : ''}: ${who
+                    .map((a) => a.name)
+                    .join(', ')}`
+                })()}
               </div>
             </div>
           </div>

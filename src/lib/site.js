@@ -16,7 +16,7 @@ export const AUTHORS = [
   { name: 'Mo Zhu', aff: [1, 2] },
   { name: 'Yijin Wang', aff: [1, 2] },
   { name: 'Zhiyang Liu', aff: [2] },
-  { name: 'Fei Gao', aff: [1, 2], corresponding: true },
+  { name: 'Fei Gao', aff: [1, 2] },
   { name: 'Yuze Wu', aff: [1, 2], corresponding: true },
   { name: 'Xin Zhou', aff: [2] },
 ]
@@ -24,7 +24,6 @@ export const AUTHORS = [
 export const AFFILIATIONS = [
   { id: 1, text: 'Zhejiang University' },
   { id: 2, text: 'Differential Robotics' },
-  { id: 3, text: 'Southern University of Science and Technology' },
 ]
 
 export const LINKS = {
