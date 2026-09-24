@@ -106,7 +106,6 @@ export default function RealWorld() {
       id="realworld"
       eyebrow="Real world"
       title="Zero-shot flight in unseen environments"
-      lead="20 real-world tasks, five trials each, spanning indoor garages, campus roads and parkland. The policy never saw any of them during training."
     >
       <div className="reveal mb-8 grid gap-4 sm:grid-cols-3">
         {HEADLINES.map(([k, l, s]) => (

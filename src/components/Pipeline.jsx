@@ -344,7 +344,6 @@ export default function Pipeline() {
       id="pipeline"
       eyebrow="Method"
       title="A five-stage data engine"
-      lead="Each stage removes one specific failure mode: prompt collapse, cost, motion bias, long-tail scarcity, and generative hallucination."
     >
       <div className="grid gap-8 lg:grid-cols-[280px_1fr] lg:gap-12">
         {/* stepper ------------------------------------------------------- */}
