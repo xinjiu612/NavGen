@@ -61,17 +61,10 @@ function FlightGallery() {
               aspect={5 / 3}
               className="transition duration-300 group-hover:!border-cyan/40"
             />
-            {/* No caption: the issued command is burned into each recording. */}
-            <div className="mono mt-2 flex items-center gap-1.5 px-0.5 text-[0.62rem] text-txt-mute">
-              <span>{c.scene}</span>
-              <span className="opacity-40">·</span>
-              <span>{c.duration.toFixed(1)}s</span>
-              {c.duration > 12 && (
-                <>
-                  <span className="opacity-40">·</span>
-                  <span className="text-violet">long horizon</span>
-                </>
-              )}
+            {/* No caption: the issued command is burned into each recording.
+                The row keeps its height so the grid stays aligned. */}
+            <div className="mono mt-2 min-h-[1rem] px-0.5 text-[0.62rem] text-txt-mute">
+              {c.duration > 12 && <span className="text-violet">long horizon</span>}
             </div>
           </button>
         ))}
@@ -128,12 +121,6 @@ export default function RealWorld() {
       <div className="reveal">
         <FlightGallery />
       </div>
-
-      <p className="reveal mt-6 text-[0.82rem] leading-relaxed text-txt-mute">
-        Failures cluster on targets that are very small, or that lack colour
-        contrast against the background — the remaining gap between generated and
-        real visual statistics.
-      </p>
     </Section>
   )
 }

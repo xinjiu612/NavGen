@@ -33,15 +33,3 @@ export default function Citation() {
   )
 }
 
-export function Footer() {
-  return (
-    <footer className="border-t border-white/[0.07] py-10">
-      <div className="shell text-center text-[0.72rem] leading-relaxed text-txt-mute">
-        <div>All video shown on this page is generated or captured by the authors.</div>
-        <div className="mt-1">
-          Figures are reproduced from the paper; charts are redrawn for the web.
-        </div>
-      </div>
-    </footer>
-  )
-}

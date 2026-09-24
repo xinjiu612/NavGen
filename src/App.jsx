@@ -8,7 +8,7 @@ import Gallery from './components/Gallery.jsx'
 import Analytics from './components/Analytics.jsx'
 import Benchmark from './components/Benchmark.jsx'
 import RealWorld from './components/RealWorld.jsx'
-import Citation, { Footer } from './components/Citation.jsx'
+import Citation from './components/Citation.jsx'
 import { Rule } from './components/ui.jsx'
 
 function LoadingVeil() {
@@ -52,7 +52,6 @@ function Body() {
         <Rule />
         <Citation />
       </main>
-      <Footer />
     </>
   )
 }
