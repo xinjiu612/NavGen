@@ -16,19 +16,15 @@ export const AUTHORS = [
   { name: 'Mo Zhu', aff: [1, 2] },
   { name: 'Yijin Wang', aff: [1, 2] },
   { name: 'Zhiyang Liu', aff: [2] },
-  { name: 'Xin Zhou', aff: [2] },
-  { name: 'Ziming Ding', aff: [2, 3], corresponding: true },
-  { name: 'Yuze Wu', aff: [2], corresponding: true },
   { name: 'Fei Gao', aff: [1, 2], corresponding: true },
+  { name: 'Yuze Wu', aff: [1, 2], corresponding: true },
+  { name: 'Xin Zhou', aff: [2] },
 ]
 
 export const AFFILIATIONS = [
-  {
-    id: 1,
-    text: 'State Key Laboratory of Industrial Control Technology, Zhejiang University, Hangzhou 310027, China',
-  },
-  { id: 2, text: 'Differential Robotics, Hangzhou 311121, China' },
-  { id: 3, text: 'Southern University of Science and Technology, Shenzhen 518055, China' },
+  { id: 1, text: 'Zhejiang University' },
+  { id: 2, text: 'Differential Robotics' },
+  { id: 3, text: 'Southern University of Science and Technology' },
 ]
 
 export const LINKS = {
@@ -45,8 +41,8 @@ export const BIBTEX = `@article{huang2027navgen,
   title   = {NavGen: Visual Generative Models as a Scalable Data Engine
              for Embodied 3D Navigation},
   author  = {Huang, Xijie and Wan, Yongyang and Dong, Chengbin and Ding, Zimo
-             and Zhu, Mo and Wang, Yijin and Liu, Zhiyang and Zhou, Xin
-             and Ding, Ziming and Wu, Yuze and Gao, Fei},
+             and Zhu, Mo and Wang, Yijin and Liu, Zhiyang and Gao, Fei
+             and Wu, Yuze and Zhou, Xin},
   journal = {Under review},
   year    = {2027}
 }`

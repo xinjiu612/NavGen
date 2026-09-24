@@ -121,8 +121,10 @@ export default function Hero() {
                 </div>
               ))}
               <div className="pt-1">
-                <span className="text-cyan">†</span> Corresponding authors: Ziming Ding,
-                Yuze Wu, Fei Gao
+                <span className="text-cyan">†</span> Corresponding authors:{' '}
+                {AUTHORS.filter((a) => a.corresponding)
+                  .map((a) => a.name)
+                  .join(', ')}
               </div>
             </div>
           </div>
