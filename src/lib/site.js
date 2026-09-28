@@ -32,7 +32,7 @@ export const LINKS = {
   modelscope: 'https://www.modelscope.cn/datasets/xinjiu612/NavGen',
   huggingface: 'https://huggingface.co/datasets/xinjiu/NavGen',
   code: 'https://github.com/xinjiu612/NavGen-code',
-  arxiv: null, // add the arXiv abs URL here once the paper is posted
+  arxiv: 'https://arxiv.org/pdf/2609.30770',
   video: null,
 }
 
