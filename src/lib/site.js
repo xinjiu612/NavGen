@@ -36,14 +36,11 @@ export const LINKS = {
   video: null,
 }
 
-export const BIBTEX = `@article{huang2027navgen,
-  title   = {NavGen: Visual Generative Models as a Scalable Data Engine
-             for Embodied 3D Navigation},
-  author  = {Huang, Xijie and Wan, Yongyang and Dong, Chengbin and Ding, Zimo
-             and Zhu, Mo and Wang, Yijin and Liu, Zhiyang and Gao, Fei
-             and Wu, Yuze and Zhou, Xin},
-  journal = {Under review},
-  year    = {2027}
+export const BIBTEX = `@article{huang2026navgen,
+  title={NavGen: Visual Generative Models as a Scalable Data Engine for Embodied 3D Navigation},
+  author={Huang, Xijie and Wan, Yongyang and Dong, Chengbin and Ding, Zimo and Zhu, Mo and Wang, Yijin and Liu, Zhiyang and Gao, Fei and Wu, Yuze and Zhou, Xin},
+  journal={arXiv preprint arXiv:2609.30770},
+  year={2026}
 }`
 
 /* -------------------------------------------------------------------------- */

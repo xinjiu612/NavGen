@@ -26,7 +26,7 @@ export default function Citation() {
           </button>
         </div>
         <pre className="overflow-x-auto px-5 py-5 text-[0.78rem] leading-relaxed text-txt-dim">
-          <code className="mono whitespace-pre">{BIBTEX}</code>
+          <code className="mono whitespace-pre-wrap break-words">{BIBTEX}</code>
         </pre>
       </div>
     </Section>
